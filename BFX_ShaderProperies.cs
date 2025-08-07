@@ -46,7 +46,7 @@ public class BFX_ShaderProperies : MonoBehaviour
             yield return null;
         }
 
-        Destroy(gameobject);
+        Destroy(gameObject.transform.parent.gameObject);
     }
 
     public void BeginDecalFadeOutAutomatic()
